@@ -8,9 +8,9 @@ Este proyecto implementa un sistema básico de facturación, diseñado para gest
 ```
 /proyecto-sistema-facturacion
 ├── scripts
-│   ├── create_database.sql   # Script para crear la base de datos y sus tablas
-│   └── seed_data.sql         # Script con datos semilla para probar la estructura
-└── README.md                 # Documentación del proyecto
+│   ├── SGG_database.sql       # Script para crear la base de datos y sus tablas
+│   └── seed_SGG_data.sql         # Script con datos semilla para probar la estructura
+└── README.md                  # Documentación del proyecto
 ```
 
 ---
@@ -18,7 +18,6 @@ Este proyecto implementa un sistema básico de facturación, diseñado para gest
 ## 📌 Requisitos
 
 - SQL Server (Management Studio o compatible)
-- Permisos para ejecutar scripts T-SQL
 
 ---
 
@@ -26,7 +25,7 @@ Este proyecto implementa un sistema básico de facturación, diseñado para gest
 
 1. **Crear Base de Datos:**
 
-   Abre el archivo `create_database.sql` y ejecútalo en SQL Server. Este script:
+   Abre el archivo `SGG_database.sql` y ejecútalo en SQL Server. Este script:
 
    - Crea la base de datos `SistemaFacturacion`
    - Genera todas las tablas necesarias
@@ -34,7 +33,7 @@ Este proyecto implementa un sistema básico de facturación, diseñado para gest
 
 2. **Insertar Datos de Prueba:**
 
-   Luego, ejecuta el script `seed_data.sql`. Este incluye:
+   Luego, ejecuta el script `seed_SGG_data.sql`. Este incluye:
 
    - Tipos de cliente
    - Personas y empresas
@@ -53,14 +52,3 @@ Este proyecto implementa un sistema básico de facturación, diseñado para gest
 
 ---
 
-## ✍️ Autor
-
-- Nombre: *[Tu nombre completo aquí]*
-- Curso: Taller de Bases de Datos
-- Institución: Pascual Bravo
-
----
-
-## 🎥 Video Individual
-
-No olvides grabar tu video explicando el modelo y la ejecución del script, como indica el taller.
