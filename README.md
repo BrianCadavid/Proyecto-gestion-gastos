@@ -1,16 +1,16 @@
 
-# Sistema de Facturación - Taller de Base de Datos
+# Sistema de Gestión de Gastos - Taller de Base de Datos
 
-Este proyecto implementa un sistema básico de facturación, diseñado para gestionar clientes, usuarios, productos, facturas y pagos. Se utilizaron principios de normalización para garantizar integridad y eficiencia en la base de datos.
+Este proyecto implementa un sistema básico para registrar y controlar los gastos personales de los usuarios. Utiliza un modelo de datos relacional y normalizado, diseñado para ser claro, escalable y funcional.
 
 ## 📁 Estructura del Proyecto
 
 ```
-/proyecto-sistema-facturacion
+/proyecto-gestion-gastos
 ├── scripts
-│   ├── SGG_database.sql       # Script para crear la base de datos y sus tablas
-│   └── seed_SGG_data.sql         # Script con datos semilla para probar la estructura
-└── README.md                  # Documentación del proyecto
+│   ├── SGG_database_gastos.sql   # Script para crear la base de datos y sus tablas
+│   └── seed_SGG_gastos.sql         # Script con datos semilla para probar la estructura
+└── README.md                        # Documentación del proyecto
 ```
 
 ---
@@ -25,30 +25,33 @@ Este proyecto implementa un sistema básico de facturación, diseñado para gest
 
 1. **Crear Base de Datos:**
 
-   Abre el archivo `SGG_database.sql` y ejecútalo en SQL Server. Este script:
+   Ejecuta el archivo `SGG_database_gastos.sql` en tu entorno SQL Server. Este script:
 
-   - Crea la base de datos `SistemaFacturacion`
-   - Genera todas las tablas necesarias
-   - Establece claves primarias y foráneas
+   - Crea la base de datos `SistemaGastos`
+   - Genera las tablas necesarias con sus claves primarias y foráneas
 
 2. **Insertar Datos de Prueba:**
 
-   Luego, ejecuta el script `seed_SGG_data.sql`. Este incluye:
+   Luego, ejecuta el archivo `seed_SGG_gastos.sql`. Este incluye:
 
-   - Tipos de cliente
-   - Personas y empresas
-   - Clientes, usuarios, roles y permisos
-   - Productos, facturas, detalles y pagos
+   - Usuarios, monedas, categorías
+   - Gastos y presupuestos relacionados
 
 ---
 
 ## 🧱 Tablas Principales
 
-- **Personas / Empresas**: Representan personas naturales o jurídicas.
-- **Clientes**: Agrupa la relación con personas o empresas.
-- **Usuarios**: Cuentas asociadas a los clientes.
-- **Roles y Permisos**: Sistema de autenticación y autorización.
-- **Productos / Facturas / Pagos**: Gestión comercial.
+- **Usuarios**: Personas que registran sus gastos y presupuestos.
+- **Monedas**: Apoya el uso de diferentes divisas.
+- **Categorías**: Clasificación de los gastos.
+- **Gastos**: Registro detallado de los gastos realizados por los usuarios.
+- **Presupuestos**: Límite asignado a cada categoría durante un periodo.
 
 ---
+
+## ✍️ Autor
+
+- NombreS: *[Brian Cadavid]*
+           *[Cristian Lopez]*
+
 
